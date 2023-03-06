@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg-color: #fff;
+
+    --color-h2: #3F3D56;
+    --color-strong: #EE24FF;
+    --color-text: #828282;
+    --color-a: #3F3D56;
+
+    --ff-h2: 'Dosis', sans-serif;
+    --ff-text: 'Open Sans', sans-serif;
+
+    --a-color-hover: #312f42;
+    font-size: 62.5%;
+}
+body{
+    background-color: var(--bg-color);
+    height: 100%;
+    width: 100vw;
+}
+body p, body a {
+    font-family: var(--ff-text);
+}
+main{
+    width: 62.6rem;
+    height: 48.6rem;
+    padding: 0 4.6rem;
+    margin: 6.4rem auto;
+    display: flex;
+    flex-direction: column;
+
+}
+main img{
+    margin: 0 auto;
+}
+main h2{
+    font-family: var(--ff-h2);
+    font-size: 3.2rem;
+    line-height: 4rem;
+    text-align: center;
+    margin-top: 3.2rem;
+    margin-bottom: 1.2rem;
+}
+main h2 strong {
+    color: var(--color-strong);
+}
+main p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    text-align: center;
+    color: var(--color-text);
+}
+span{
+    color: var(--color-h2);
+    font-weight: 700;
+}
+hr{
+    width: 39rem;
+    margin: 0 auto 1.6rem auto;
+    border: 1px solid #ECEFF2;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+    gap: 4.2rem;
+}
+
+footer ul, footer li{
+    list-style: none;
+}
+
+footer ul li a{
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--color-a);
+    cursor: pointer;
+}
+
+footer ul li a:hover{
+    color: var(--a-color-hover);
+}
+footer img {
+    position: fixed;
+    bottom:0;
+    width: 100vw;
+
+}
+
+
+
+/*MEDIA QUERY */
+@media (max-width: 650px) {
+    main{
+        width: 100%;
+        margin: 5rem auto 5rem auto;
+    }
+    main img{
+        width: 30rem;
+    }
+    main h2{
+        font-size: 2.8rem;
+    }
+    main p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    hr{
+        width: 70%;
+    }
+
+}
+
+@media (max-width: 410px) {
+    main{
+        margin: 5rem auto 10rem auto;
+        padding: 0 3rem;
+    }
+    main img{
+        width: 26rem;
+    }
+    main p {
+        font-size: 1.4rem;
+    }
+
+}
+@media (max-height: 680px) {
+    main{
+        margin: 2rem auto 4rem auto;
+    }
+}
